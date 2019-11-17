@@ -37,10 +37,10 @@ struct ContentView: View {
     VStack {
       ForEach(0..<tips.count) { index in
         VStack {
-          Image(tipModel.imageName)
+          Image(self.tips[index].imageName)
             .resizable()
             .scaledToFit()
-          Text("Cat relaxation tip number \(tipModel.tip)")
+          Text(self.tips[index].tip)
         }
       }
     }
