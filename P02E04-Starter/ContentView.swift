@@ -34,10 +34,12 @@ struct ContentView: View {
   var body: some View {
     VStack {
       ForEach(Range(0...3)) {
-        Image("Meditate")
-          .resizable()
-          .scaledToFit()
-        Text("Cat relaxation tip number \($0)")
+        VStack {
+          Image("Meditate")
+            .resizable()
+            .scaledToFit()
+          Text("Cat relaxation tip number \($0)")
+        }
       }
     }
   }
