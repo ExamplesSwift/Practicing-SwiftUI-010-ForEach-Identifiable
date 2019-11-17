@@ -33,12 +33,12 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
-      ForEach(tips, id: \.self) { tip in
+      ForEach(RelaxationTip.demoTips) { tipModel in
         VStack {
-          Image("Meditate")
+          Image(tipModel.imageName)
             .resizable()
             .scaledToFit()
-          Text("Cat relaxation tip number \(tip)")
+          Text("Cat relaxation tip number \(tipModel.tip)")
         }
       }
     }
