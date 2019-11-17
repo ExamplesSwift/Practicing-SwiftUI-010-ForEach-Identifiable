@@ -36,7 +36,7 @@ struct ContentView: View {
   var body: some View {
     VStack {
       ForEach(0..<tips.count) { index in
-        VStack {
+        HStack {
           Image(self.tips[index].imageName)
             .resizable()
             .scaledToFit()
