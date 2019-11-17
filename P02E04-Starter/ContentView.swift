@@ -35,7 +35,7 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
-      ForEach(0..<tips.count) { tipModel in
+      ForEach(0..<tips.count) { index in
         VStack {
           Image(tipModel.imageName)
             .resizable()
