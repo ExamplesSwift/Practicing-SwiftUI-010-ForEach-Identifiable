@@ -29,7 +29,7 @@ import SwiftUI
 
 struct ContentView: View {
   
-  let tips = ["Dream of mice", "Make some Origami", "Get the dog juggling"]
+  let tips = RelaxationTip.demoTips
   
   @State private var selectedPickerIndex = 0
   
