@@ -34,7 +34,7 @@ struct ContentView: View {
   @State private var selectedPickerIndex = 0
   
   var body: some View {
-    VStack {
+    Picker(selection: $selectedPickerIndex, label: Text("Relaxation Actions")) {
       ForEach(0..<tips.count) { index in
         HStack {
           Image(self.tips[index].imageName)
