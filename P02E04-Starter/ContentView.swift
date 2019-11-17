@@ -31,6 +31,8 @@ struct ContentView: View {
   
   let tips = ["Dream of mice", "Make some Origami", "Get the dog juggling"]
   
+  @State private var selectedPickerIndex = 0
+  
   var body: some View {
     VStack {
       ForEach(RelaxationTip.demoTips) { tipModel in
